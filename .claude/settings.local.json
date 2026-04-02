@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx ctx7:*)",
+      "Bash(npx create-next-app@14 . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --use-npm)",
+      "Bash(cd /tmp)",
+      "Bash(npx create-next-app@14 carbone-init --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --use-npm)",
+      "Bash(rm -rf carbone-init)",
+      "Bash(npx create-next-app@14 carbone-init --ts --tailwind --eslint --app --no-src-dir --import-alias=\"@/*\" --use-npm)",
+      "Bash(cp -r /tmp/carbone-init/* /e/carbone/)",
+      "Bash(cp /tmp/carbone-init/.eslintrc.json /e/carbone/)",
+      "Bash(cp /tmp/carbone-init/.gitignore /e/carbone/)",
+      "Bash(cp /tmp/carbone-init/next-env.d.ts /e/carbone/)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(node:*)"
+    ]
+  }
+}

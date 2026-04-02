@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0A0A0A;
+  --bg-card: #111111;
+  --bg-elevated: #1A1A1A;
+  --bg-hover: #222222;
+
+  --text-primary: #E8E4DF;
+  --text-secondary: #9A9590;
+  --text-muted: #5C5652;
+  --text-disabled: #3A3633;
+
+  --accent-copper: #C17F4E;
+  --accent-copper-hover: #D4945F;
+  --accent-red: #8B2020;
+  --accent-red-hover: #A52828;
+
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-medium: rgba(255, 255, 255, 0.12);
+
+  --ease-monopo: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* ── Base ──────────────────────────────────────────── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: var(--font-manrope), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--accent-copper);
+  color: var(--bg-primary);
+}
+
+/* ── Scrollbar ────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-copper);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-copper-hover);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-copper) var(--bg-primary);
+}
+
+/* ── Typography Scale ─────────────────────────────── */
+
+.heading-xl {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: clamp(64px, 10vw, 120px);
+  line-height: 0.95;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.heading-lg {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: clamp(48px, 6vw, 80px);
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.heading-md {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.heading-sm {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.15;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.body-lg {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.body-md {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.body-sm {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.accent-text {
+  font-family: var(--font-playfair), serif;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* ── Custom Cursor ────────────────────────────────── */
+
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* ── Link Underline Slide ─────────────────────────── */
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-copper);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-monopo);
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
