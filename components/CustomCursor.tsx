@@ -11,10 +11,14 @@ export default function CustomCursor() {
     "default"
   );
   const [visible, setVisible] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
-    // Hide on touch devices
-    if (window.matchMedia("(pointer: coarse)").matches) return;
+    setIsTouchDevice(window.matchMedia("(pointer: coarse)").matches);
+  }, []);
+
+  useEffect(() => {
+    if (isTouchDevice) return;
 
     const onMouseMove = (e: MouseEvent) => {
       mouse.current = { x: e.clientX, y: e.clientY };
@@ -83,12 +87,9 @@ export default function CustomCursor() {
       document.removeEventListener("mouseover", onElementHover);
       document.removeEventListener("mouseout", onElementLeave);
     };
-  }, [visible, hoverType]);
+  }, [visible, hoverType, isTouchDevice]);
 
-  // Don't render on touch devices
-  if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) {
-    return null;
-  }
+  if (isTouchDevice) return null;
 
   return (
     <>
