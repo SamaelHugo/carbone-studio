@@ -13,7 +13,6 @@ const tattooServices = services.filter((s) => s.category === "tattoo").slice(1, 
 const titleLines = ["Два мастерства", "под одной", "крышей"];
 
 function ServiceCard({
-  category,
   accentColor,
   categoryLabel,
   title,

@@ -157,7 +157,6 @@ export default function GalleryPage() {
             {/* Desktop 3 cols / Tablet 2 cols / Mobile 1 col */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {(() => {
-                const cols = typeof window !== "undefined" && window.innerWidth >= 1024 ? 3 : 2;
                 const columns = getColumns(filtered, 3);
                 return columns.map((col, colIdx) => (
                   <div key={colIdx} className="flex flex-col gap-4">
