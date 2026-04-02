@@ -13,7 +13,10 @@
       "Bash(cp /tmp/carbone-init/next-env.d.ts /e/carbone/)",
       "Bash(npm install:*)",
       "Bash(npx next:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npx tsc:*)",
+      "Bash(curl -L -o /e/carbone/public/videos/hero.mp4 \"https://videos.pexels.com/video-files/3993394/3993394-sd_640_360_25fps.mp4\" --max-time 30)",
+      "Bash(curl -L -o /e/carbone/public/videos/hero.mp4 \"https://www.pexels.com/download/video/3993394/\" --max-time 30 -H \"User-Agent: Mozilla/5.0\")"
     ]
   }
 }

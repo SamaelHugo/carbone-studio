@@ -111,7 +111,7 @@ Reference: monopo.vn — page transitions, smooth scroll, text-masks, reveal eff
 
 ## Progress
 - [x] Prompt 0: Design system + Layout (preloader, nav, footer, Lenis, custom cursor)
-- [ ] Prompt 1: Home — video hero + services preview
+- [x] Prompt 1: Home — video hero + services preview
 - [ ] Prompt 2: Home — masters section + gallery preview + booking CTA
 - [ ] Prompt 3: Services page
 - [ ] Prompt 4: Masters page
