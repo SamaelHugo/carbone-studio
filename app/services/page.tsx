@@ -127,15 +127,29 @@ export default function ServicesPage() {
   return (
     <main>
       {/* Page Hero */}
-      <section className="h-screen flex flex-col items-center justify-center relative">
-        <ScrollReveal direction="clip">
+      <section className="h-screen flex flex-col items-center justify-center relative overflow-hidden">
+        {/* Watermark */}
+        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas text-[150px] md:text-[300px] tracking-[8px] text-text-primary opacity-[0.03] select-none pointer-events-none z-0 whitespace-nowrap">
+          CARBONE
+        </span>
+
+        <ScrollReveal direction="clip" className="relative z-10">
           <h1 className="font-bebas text-[72px] md:text-[120px] tracking-[4px] text-text-primary text-center">
             УСЛУГИ
           </h1>
         </ScrollReveal>
 
+        {/* Decorative line */}
+        <motion.div
+          className="relative z-10 w-[30%] h-[1px] my-5 origin-center"
+          style={{ backgroundColor: "var(--border-subtle)" }}
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.8, ease: EASE, delay: 0.3 }}
+        />
+
         <motion.p
-          className="font-playfair italic text-[18px] md:text-[22px] text-text-secondary mt-4"
+          className="relative z-10 font-playfair italic text-[18px] md:text-[22px] text-text-secondary"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: EASE, delay: 0.4 }}
