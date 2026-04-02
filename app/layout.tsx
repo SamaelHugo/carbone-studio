@@ -4,6 +4,7 @@ import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import CustomCursor from "@/components/CustomCursor";
 import Preloader from "@/components/Preloader";
+import PageTransition from "@/components/PageTransition";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -49,7 +50,9 @@ export default function RootLayout({
           <CustomCursor />
           <Preloader>
             <Navbar />
-            {children}
+            <PageTransition>
+              {children}
+            </PageTransition>
             <Footer />
           </Preloader>
         </LenisProvider>

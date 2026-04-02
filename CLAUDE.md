@@ -117,4 +117,4 @@ Reference: monopo.vn — page transitions, smooth scroll, text-masks, reveal eff
 - [x] Prompt 4: Masters page
 - [x] Prompt 5: Gallery page (masonry + filters)
 - [x] Prompt 6: Booking + Contact pages
-- [ ] Prompt 7: Animations polish + page transitions + deploy
+- [x] Prompt 7: Animations polish + page transitions + deploy

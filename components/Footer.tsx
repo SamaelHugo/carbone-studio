@@ -39,7 +39,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block font-manrope text-[13px] text-text-secondary hover:text-text-primary transition-colors duration-300"
+                className="block link-underline font-manrope text-[13px] text-text-secondary hover:text-text-primary transition-colors duration-[400ms] ease-monopo"
               >
                 {link.label}
               </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
             href="https://t.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-muted hover:text-accent-copper transition-colors duration-300"
+            className="text-text-muted hover:text-accent-copper transition-all duration-[400ms] ease-monopo hover:rotate-[15deg]"
             aria-label="Telegram"
           >
             <Send size={16} />
@@ -89,7 +89,7 @@ export default function Footer() {
             href="https://instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-muted hover:text-accent-copper transition-colors duration-300"
+            className="text-text-muted hover:text-accent-copper transition-all duration-[400ms] ease-monopo hover:rotate-[15deg]"
             aria-label="Instagram"
           >
             <AtSign size={16} />

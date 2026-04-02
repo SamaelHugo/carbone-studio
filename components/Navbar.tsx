@@ -64,7 +64,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="link-underline font-manrope text-[13px] uppercase tracking-widest text-text-secondary hover:text-text-primary transition-colors duration-300"
+                className="link-underline font-manrope text-[13px] uppercase tracking-widest text-text-secondary hover:text-text-primary transition-colors duration-[400ms] ease-monopo"
               >
                 {link.label}
               </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
             <Phone size={14} className="text-text-secondary" />
             <a
               href="tel:+79991234567"
-              className="font-manrope text-[13px] text-text-secondary hover:text-accent-copper transition-colors duration-300"
+              className="font-manrope text-[13px] text-text-secondary hover:text-accent-copper transition-colors duration-[400ms] ease-monopo"
             >
               +7 (999) 123-45-67
             </a>
