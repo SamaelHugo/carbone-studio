@@ -145,7 +145,7 @@ export const masters: Master[] = [
     experience: "12 лет опыта",
     specialization: "Бритьё, моделирование бороды",
     photo:
-      "https://images.unsplash.com/photo-1503951914875-452b1d6ba607?w=600&h=750&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
     bio: "Виртуоз опасной бритвы и мастер работы с бородой. Превращает каждый визит в ритуал.",
   },
   {
@@ -180,7 +180,7 @@ export const gallery: GalleryItem[] = [
   {
     id: "g3",
     image:
-      "https://images.unsplash.com/photo-1503951914875-452b1d6ba607?w=600&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80",
     category: "barber",
     master: "Марк Осипов",
     description: "Королевское бритьё с горячим полотенцем",
@@ -188,7 +188,7 @@ export const gallery: GalleryItem[] = [
   {
     id: "g4",
     image:
-      "https://images.unsplash.com/photo-1590246814883-57c511e76df4?w=600&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?auto=format&fit=crop&w=800&q=80",
     category: "tattoo",
     master: "Алиса Тень",
     description: "Геометрический дотворк, плечо",
