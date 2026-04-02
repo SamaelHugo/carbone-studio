@@ -162,10 +162,10 @@ export default function MastersPage() {
       </section>
 
       {/* Masters Grid */}
-      <section className="px-5 md:px-12 py-[80px] md:py-[160px]">
+      <section className="px-5 md:px-12 pt-[80px] md:pt-[120px] pb-0">
         {masters.map((master, i) => (
           <div key={master.id}>
-            <div className="py-[60px] md:py-[120px]">
+            <div className={`pt-[60px] md:pt-[80px] ${i === masters.length - 1 ? "pb-[60px] md:pb-[120px]" : "pb-[60px] md:pb-[80px]"}`}>
               <MasterBlock master={master} index={i} />
             </div>
 
