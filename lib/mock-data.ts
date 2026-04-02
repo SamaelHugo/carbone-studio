@@ -236,7 +236,7 @@ export const gallery: GalleryItem[] = [
   {
     id: "g10",
     image:
-      "https://images.unsplash.com/photo-1598371839696-5c5bb1c494c9?w=600&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80",
     category: "tattoo",
     master: "Даниил Крест",
     description: "Детализированный реализм, голень",
@@ -252,7 +252,7 @@ export const gallery: GalleryItem[] = [
   {
     id: "g12",
     image:
-      "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?auto=format&fit=crop&w=800&q=80",
     category: "tattoo",
     master: "Алиса Тень",
     description: "Ботаническая графика, рёбра",
